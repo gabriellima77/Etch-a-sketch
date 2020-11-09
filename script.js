@@ -91,9 +91,10 @@ function main(){
 
     reset.addEventListener('click', resetGrid);
     size.textContent = slider.value;
+    box.style.gridTemplateColumns = numberColumns(16);
+    makeGrid(16, box);
     slider.oninput = ()=> {
         size.textContent = slider.value;
-        box.style.display = 'grid';
         box.style.gridTemplateColumns = numberColumns(size.textContent);
         removeGrid();
         makeGrid(size.textContent, box);

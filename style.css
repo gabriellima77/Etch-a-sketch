@@ -81,6 +81,7 @@ input[type="color"] {
 }
 
 .box {
+    display: grid;
     padding: 1px 1px 1px 1px;
     width: 75vh;
     height: 75vh;
