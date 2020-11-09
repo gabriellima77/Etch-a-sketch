@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Etch a sketch</title>
+    </head>
+    <body>
+        <h1>Etch a sketch!</h1>
+        <form id="btn-form" action="">
+            <button id="opacity" class="btn" type="button" value="Opacity">Opacity</button>
+            <label id="color" for="pick">Pick a color:
+                <input id="pick" type="color" value="black">
+            </label>
+            <button id="rainbow" class="btn" type="button" value="Rainbow">Rainbow</button>
+        </form>
+        <form id="slide-form" action="">
+            <label for="slider">Select size: <span id="value"></span>
+                <input id="slider" type="range" min="10" max="100" value="10">
+            </label>
+            <button id="reset" class="btn" type="button">Reset</button>
+        </form>
+        <div class="box"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
